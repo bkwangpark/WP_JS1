@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	/* var str = "Hello, I'm a string!";
+	console.log("문자열 길이는 : " + str.length);
+
+	for ( var i = 0; i < str.length; i++) {
+		console.log(str[i]);
+	} */
+
+	console.log("첫 번째 문자열 " + " 두 번째 문자열");
+
+	var str = "number " + 5;
+	console.log(str + " : " + typeof (str));
+
+	str = 5 + "5";
+	console.log(str + " : " + typeof (str));
+
+	//부분문자열
+	var str = "string1 string2 string3"
+
+	console.log(str.length);
+
+	var start = str.indexOf('string2');
+	console.log(start);
+	console.log(str.substr(start));
+
+	// 간단히,
+	console.log(str.substr(str.indexOf('string2')));
+
+	// str은 변하지 않는다.
+	console.log(str);
+
+	var d = new Date(); // 현재 시간
+	document.write(d+"<br>");
+
+	var d = new Date(2013, 0, 28); //2013 년 1월 28일  
+	document.write(" 년도: " + (d.getYear() + 1900) + "<br>" + " 월: "
+			+ (d.getMonth() + 1) + "<br>" + " 일은: " + d.getDate() + "<br>"
+			+ " 요일은: " + d.getDay() + "<br>" + " 시는: " + d.getHours() + "<br>"
+			+ " 분은: " + d.getMinutes() + "<br>" + " 초는: " + d.getSeconds()
+			+ "<br>" + " 밀리초: " + d.getMilliseconds() + "<br>");
+
+	d.setYear(2014); // 2014년 세팅
+	document.write(d + "<br>");
+
+	d.setMonth(11); // 12월 세팅
+	document.write(d + "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

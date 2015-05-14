@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var Foo = function(name, nick) {
+		this.name = name;
+		this.nick = nick;
+		this.doFoo = function() {
+			document.write("I'm " + this.name + " : " + this.nick + "<br>");
+		};
+	}
+
+	var foo = new Foo("박병광", "켁");
+	foo.doFoo();
+
+	var foo2 = new Foo("BK", "풉");
+	foo2.doFoo();
+</script>
+</head>
+<body>
+
+</body>
+</html>
